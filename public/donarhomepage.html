@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/donarhomepage.css">
+</head>
+<body>
+
+    <section class="header">
+    
+        <h2 class ="user">Donar</h2>
+        <h3 class ="greeting"></h3>
+        <button class="logout">log out</button>
+      
+    </section>
+    <h1 class="bloodbanklabel">Blood Bank List</h1>
+   <section class="main">
+    <div class="bloodbanklist" id ="bloodbanklist">
+        //blood bank List dyanamic div
+    </div>
+    <div class="donation-box" id="donation-box" style="display: none;">
+        
+        <p >Do You want to Donate your blood here at,</p>
+        <h1 class ="bbname"id ="bbname"></h1>
+        <h4 class="bbaddreslabel">Address: </h4>
+        <p class ="bbaddress"id ="bbaddress"></p>
+        <p class="donationlabel" > </p>
+        <fieldset>
+            <legend>After Succesful Donation please Check this</legend>
+              <input type="checkbox" id="isdonationdone" name="isdonationdone" onclick="creatingDonation()">
+              <p id="verifed" style="display: none;" > Not Verifed </p>
+        </fieldset>
+    </div>
+
+   </section>
+<!-- 
+   For Displaying my donation done -->
+   <section class="mydonation">
+    <h1 class="donationlabel">My Donation</h1>
+     <div class="donationlist" id ="donationlist">
+        
+    </div>
+</section>
+    <script src="js/donarhomepage.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="alert-box">
+        <p class="alert">msg</p>
+    </div>
+
+    <div class="form">
+        <h1 class="heading">login</h1>
+        <input type="text" placeholder="mobile number/username" autocomplete="off" class="mobile-number" required>
+        <input type="password" placeholder="password" autocomplete="off" class="password" required>
+        <select name="usertype" id="usertype" class="usertype">
+            <option selected disabled hidden>Login as:</option>
+            <option value="Donar">Donar</option>
+            <option value="Blood Bank">Blood Bank</option>
+            <option value="Admin" >Admin</option>
+        </select>
+        <button class="submit-btn" id="signinbtn" onclick="signin()">log in</button>
+        <a href="/register" class="link">don't have an account? Register one</a>
+    </div>
+
+    <script src="js/form.js"></script>
+</body>
+</html>

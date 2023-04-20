@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="alert-box">
+        <p class="alert">error message</p>
+    </div>
+
+    <div class="form">
+        <h1 class="heading">Register</h1>
+        <input type="text" placeholder="name" autocomplete="off" class="name" required>
+        <input type="text" placeholder="Mobile number" autocomplete="off" class="mobile-number" required>
+        <input type="password" placeholder="password" autocomplete="off" class="password" required>
+        <input type="number" placeholder="Aadhar card" autocomplete="off" class="aadhar" required> 
+        <select name="bloodgroup" id="bloodgroup" class="bloodgroup">
+            <option selected disabled >Choose Blood Group</option>
+            <option value="O+">O+</option>
+            <option value="A+">A+</option>
+            <option value="B+" >B+</option>
+            <option value="AB+">AB+</option>
+            <option value="O-">O-</option>
+            <option value="A-">A-</option>
+            <option value="B-" >B-</option>
+            <option value="AB-">AB-</option>
+        </select>
+
+        <span id ="submit-error" style="display: none;">Please fix the error</span>
+        <button class="submit-btn"id ="signup-button" onclick="signup()">register</button>
+        <a href="/login" class="link">already have an account ? log in here</a>
+    </div>
+
+    <script src="js/form.js"></script>
+</body>
+</html>

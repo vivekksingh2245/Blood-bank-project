@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../image/bloodbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    padding: 15px;
+    background-size: cover;
+    background-color: rgb(157, 157, 170);
+    background-position: top;
+    /* position: absolute; */
+    /* justify-content: space-between; */
+    
+    
+}
+.maindonar{
+    display: flex;
+    flex-direction:column ;
+}
+.logout{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.greeting{
+    font-family: 'dosis';
+    font-size: 35px;
+    margin: auto;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between; 
+    color: #fff;
+    text-transform: capitalize;
+}
+
+
+.text-box{
+    width: 90%;
+    margin: 20px;
+    padding: 20px;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    text-align: top;
+    color: #fff;
+    /* background-position: bottom; */
+}
+.text-box h1{
+    font-size: 55px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.donateduserlist{
+    /* width: 400px; */
+    /* height: 300px; */
+    margin: 20px;
+    padding: 20px;
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction:column ;
+ 
+ 
+}
+
+.donateduser{
+    /* width: 400px ;
+    height: 100px; */
+    /* min-width: auto;
+    min-height: auto; */
+    padding: 20px;
+    cursor: pointer;
+    margin: 15px;
+    display: flex;
+    flex-direction:row ;
+    background-color: rgb(146, 135, 135);
+    border-radius: 5px;
+    
+    justify-content: space-between;
+    /* align-items: center; */
+}

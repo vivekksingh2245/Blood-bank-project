@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/homepage.css">
+    
+</head>
+<body>
+
+    <section class="header">
+    
+        <h2 class ="user">ADMIN</h2>
+        <h3 class ="greeting"></h3>
+        <button class="logout">log out</button>
+      
+    </section>
+
+    <div class="form">
+        <h1 class="heading">Register Blood Bank</h1>
+        <input type="text" placeholder="Blood Bank Name" autocomplete="off" class="name" required>
+        <input type="text" placeholder="Username" autocomplete="off" class="username" required>
+        <input type="password" placeholder="Password" autocomplete="off" class="password" required>
+        <input type="text" placeholder="Address" autocomplete="off" class="address" required> 
+        
+
+        <button class="submit-btn"id ="signup-button" onclick="createBloodBank()">Create Blood Bank</button>
+    </div>
+
+    <h1 class="bloodbanklabel">Blood Bank List</h1>
+    <section class="main">
+
+    
+    <div class="bloodbanklist" id ="bloodbanklist">
+
+    </div>
+    <div class="donation-box" >
+    
+        <h1 class ="bbname"id ="bbname"></h1>
+        <h4 class="bbaddreslabel">Address: </h4>
+        <p class ="bbaddress"id ="bbaddress"></p>
+        <p id="usernamefield" > </p>
+        <p id="passwordfield"></p>
+    </div>
+</section>
+    <script src="js/homepage.js"></script>
+    
+</body>
+</html>

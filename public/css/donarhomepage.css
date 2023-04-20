@@ -1,0 +1,52 @@
+
+.donation-box .bbname{
+    margin: 10px;
+    font-size: medium;
+}
+.donation-box p,h4{
+    margin: 10px;
+    font-size: 16px;
+    
+}
+p,
+legend {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: 0.4rem;
+}
+.mydonation{
+    display: flex;
+    flex-direction:column ;
+}
+
+.donationlist{
+    width: 300px;
+    /* height: auto; */
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction:column ;
+ 
+ 
+}
+
+.donation{
+    width: 300px ;
+    height: 150px;
+    /* min-width: auto;
+    min-height: auto; */
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+    display: flex;
+    flex-direction:column ;
+    background-color: rgb(146, 135, 135);
+    border-radius: 5px;
+    
+    justify-content: space-between;
+   
+}

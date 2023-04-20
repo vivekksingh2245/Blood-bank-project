@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../image/bloodbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    padding: 15px;
+    background-size: cover;
+    background-color: rgb(157, 157, 170);
+    background-position: top;
+    /* position: absolute; */
+    /* justify-content: space-between; */
+    
+    
+}
+
+.logout{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.greeting{
+    font-family: 'dosis';
+    font-size: 35px;
+    margin: auto;
+    font-weight: bold;
+   
+    align-items: center;
+    justify-content: space-between; 
+    color: #fff;
+    
+    text-transform: capitalize;
+}
+
+
+
+.form{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin:  auto;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    transition: .5s;
+    justify-content: center;
+    align-items: center;
+}
+
+input,
+.submit-btn{
+   
+    width: 80%;
+    height: 35px;
+    display: block;
+    margin: 20px ;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    padding: 15px;
+    transition: .5s;
+    
+}
+
+
+input::placeholder{
+    color: #fff;
+}
+
+input:focus,
+.submit-btn:hover{
+    background: #fff;
+    color: #000;
+}
+
+input:focus::placeholder{
+    color: #000;
+}
+
+.submit-btn{
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 50px auto 0;
+   
+}
+
+.link{
+    
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin: 30px auto;
+}
+
+.link:hover{
+    color: #fff;
+}
+
+.main{
+    display: flex;
+    flex-direction:row ;
+}
+.donation-box{
+    color: #000;
+    height: 400px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: 35px;
+    background-color: black;
+    justify-content: right;
+    align-self: stretch;
+    font-weight: 1;
+    background-color: rgb(171, 165, 165);
+    border-radius: 20px;
+    border-color: black;
+    padding: 20px;
+    align-items: centers;
+   
+}
+.bloodbanklist{
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction:column ;
+ 
+ 
+}
+
+.bloodbank{
+    width: 300px ;
+    height: 35px;
+    min-width: auto;
+    min-height: auto;
+    padding: 20px;
+    cursor: pointer;
+    margin: 5px;
+    display: flex;
+    flex-direction:row ;
+    background-color: rgb(146, 135, 135);
+    border-radius: 5px;
+    
+    justify-content: space-between;
+    align-items: center;
+}
